@@ -8,7 +8,7 @@ Some Features of C#
 Q What is CLR
 A CLR stands for Common language runtime it is a virtual machine component in .NET Framework. It provides the runtime env for execution of code and makes it simple by providing services like memory management, type safety and thread management
 
-Q what is use of ref in C#
+Q what is use of ref in C#<br>
 A Ref keyword is used to pass argument value by reference(argument is need to be defined before passing)
 
 Q what is out keyword
