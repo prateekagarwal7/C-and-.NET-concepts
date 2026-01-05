@@ -21,4 +21,8 @@ Q What is Jagged Array?<br>
 A Jagged Array is multi dimensional array with fixed row size or it is array of array with each array of being a vivid length<br>
 <i>Initilisation</i>- int[][] arr = new int[3][];
 
+Q What is Tuples<br>
+A Tuples are similar to array but they are stored they can hold diff datatype values. They can hold uptill max 8 values. 
+<i>Initilization</i> Tuple<int,string,int>tp = new Tuple<int, string, int>(1,"wef",5);
+
 
