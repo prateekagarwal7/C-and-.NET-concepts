@@ -25,4 +25,7 @@ Q What is Tuples<br>
 A Tuples are similar to array but they are stored they can hold diff datatype values. They can hold uptill max 8 values. 
 <i>Initilization</i> Tuple<int,string,int>tp = new Tuple<int, string, int>(1,"wef",5);
 
+Q What is JIT<br>
+A JIT stands for just in time it is part of clr and helps in executing the code written in .NET language. Language specific compiler comvert the code in intermediate language from where JIT converts it into machine understandable form
+
 
