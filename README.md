@@ -28,4 +28,14 @@ A Tuples are similar to array but they are stored they can hold diff datatype va
 Q What is JIT<br>
 A JIT stands for just in time it is part of clr and helps in executing the code written in .NET language. Language specific compiler comvert the code in intermediate language from where JIT converts it into machine understandable form
 
+Q What is Garbage Collector<br>
+A Garbage Collector is used for automatic memory management. It work on managed heap. Garbage Collection happen when atleast one of this is cleared
+<ul>
+  <li>
+    System has low physical memory
+  </li>
+  <li>When memory in the heap memory exceeds the exsisting threshold</li>
+  <li>GC.Collect method is called</li>
+</ul>
+
 
