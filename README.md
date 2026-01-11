@@ -38,4 +38,19 @@ A Garbage Collector is used for automatic memory management. It work on managed 
   <li>GC.Collect method is called</li>
 </ul>
 
+Q What is Namespace<br>
+A It is a way of keeping one set of name(classes, struct and interfaces) different from another set of name. The major adv of this is same class name defined in different namespace dont clash with each other. Classes having common feature must be declared under same name space.<br>
+<b> ex</b>
+<ul>
+  <li>namespace first {<br>
+class animal{}
+}
+  </li>
+<li>
+  System.Console.WriteLine();
+</li>
+</ul><br>
+Q What is use of "using keyword"<br>
+A using provides the way of specifying which namespace is being used. We dont need to use namespace.class combination again and again. By "using " we can directly access the class of the namespace
+
 
