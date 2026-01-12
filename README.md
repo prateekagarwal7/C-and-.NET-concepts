@@ -52,5 +52,7 @@ class animal{}
 </ul><br>
 Q What is use of "using keyword"<br>
 A using provides the way of specifying which namespace is being used. We dont need to use namespace.class combination again and again. By "using " we can directly access the class of the namespace
+Q What is use of String.Text.StringBuilder<br>
+A Inorder to make a muttable string we use StringBuilder. If we would be using System.String and we try to edit a string it will create a new object in the heap memory 
 
 
