@@ -52,11 +52,17 @@ class animal{}
 </ul><br>
 Q What is use of "using keyword"<br>
 A using provides the way of specifying which namespace is being used. We dont need to use namespace.class combination again and again. By "using " we can directly access the class of the namespace<br>
+
 Q What is use of String.Text.StringBuilder<br>
 A Inorder to make a muttable string we use StringBuilder. If we would be using System.String and we try to edit a string it will create a new object in the heap memory 
+
 Q What is sealed class<br>
 A Sealed keyword is used to restrict the user from inheriting the class. A method can also be sealed but in order to seal it we need to declare it as virtual in base class. Sealed method can not be overloaded.<br>
 <p>
   Q What is virtual method<br>
   A Virtual Methdo is used to implement the polymorphirm. The virtual method is always need to be declared in the base class. All virtual method are not need to be overridden in the child class. Override keyword is used to override the virtual method
 </p>
+
+Q What are access modifiers<br>
+A These are used to set the accessibility of members, methods of the class, class as well. There are 4 type of accessmodifiers that are private, public, protected and internal.
+
