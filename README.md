@@ -65,4 +65,8 @@ A Sealed keyword is used to restrict the user from inheriting the class. A metho
 
 Q What are access modifiers<br>
 A These are used to set the accessibility of members, methods of the class, class as well. There are 4 type of accessmodifiers that are private, public, protected and internal.
+<p>
+  Q what is delegate<br>
+  A Delegate are wrapper around a method in place of calling method directly it allows us to invoke it dynamically
+</p>
 
