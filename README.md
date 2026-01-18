@@ -69,4 +69,7 @@ A These are used to set the accessibility of members, methods of the class, clas
   Q what is delegate<br>
   A Delegate are wrapper around a method in place of calling method directly it allows us to invoke it dynamically
 </p>
+<p>Q What is Static Class<br>
+A Static class cannot be initialised and contain only static members. Static keyword is used to define a static class along with it we can directly use it by name in place of instance</p>
+
 
