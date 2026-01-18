@@ -71,5 +71,14 @@ A These are used to set the accessibility of members, methods of the class, clas
 </p>
 <p>Q What is Static Class<br>
 A Static class cannot be initialised and contain only static members. Static keyword is used to define a static class along with it we can directly use it by name in place of instance</p>
+<p>
+  Q Explain the concept of nullable type<br>
+  A It is used to allow nullable value + normal range of values. It is defined using ? operator.<br>
+  Ex int ? x = null;<br>
+  HasValue is used to to determine if value is null or not. ex x.HasValue<br>
+  x.Value is used to fetch the value out of nullable variable.<br>
+  null-coalescing operator ?? - int value = nullableInt ?? 0; // Use 0 if nullableInt is null<br>
+Nullable types are especially handy in scenarios where a value might be absent, such as optional parameters or database fields.
+</p>
 
 
