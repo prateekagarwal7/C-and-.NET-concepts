@@ -89,5 +89,33 @@ When we write code in C# it is run inside CLR. CLR takes care of memeory managem
 <h4> Unmanaged code</h4>
 The code that is written outside the CLR is unmanaged code. Developer need to take care of memory management manually. It might be effecient in some cases but come with greater rish ok crashes, memory leak and security vunerability.
 
+Q How Garbage collection works.
+A Garbage collector is part of CLR and responsible for the memory management
+<ul>
+  <li>
+    it scans the memory to identify which object is still in use
+  </li>
+  <li>
+    it sweeps through memory to free up the space
+  </li>
+  <li>
+    it reorganises the momory to avoid the fregmentation
+  </li>
+</ul>
+
+Q Does garbage collector afftects performance
+A <b>Yes</b> it might temporary pause the execution when run. to avoid it take following steps
+<ul>
+  <li>
+    use of structure instead of class for smaller objects
+  </li>
+  <li>
+    reusing the same object instead of making the new one whereever possible
+  </li>
+  <li>
+    Making smaller objects becoz larger one are treated differently
+  </li>
+</ul>
+
 
 
