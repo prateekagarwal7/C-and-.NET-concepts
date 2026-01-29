@@ -81,4 +81,13 @@ A Static class cannot be initialised and contain only static members. Static key
 Nullable types are especially handy in scenarios where a value might be absent, such as optional parameters or database fields.
 </p>
 
+Q What is difference B/w managed and unmanaged code<br>
+A .NET code can be managed and unmanaged depending upon the how it is run in CLR
+<h4> Managed Code </h4>
+When we write code in C# it is run inside CLR. CLR takes care of memeory management, security and exception handling. We dont have to worry about the memory allocation and freeing up space.
+
+<h4> Unmanaged code</h4>
+The code that is written outside the CLR is unmanaged code. Developer need to take care of memory management manually. It might be effecient in some cases but come with greater rish ok crashes, memory leak and security vunerability.
+
+
 
