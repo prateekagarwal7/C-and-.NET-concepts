@@ -103,6 +103,9 @@ A Garbage collector is part of CLR and responsible for the memory management
   </li>
 </ul>
 
+Q What is LINQ ?
+A It stands for <b>Language Integrated Query</b> It is feature of C# which allows us to filter, transform data in by help of sql like syntax without looping over the XML, collection of database.
+
 Q Does garbage collector afftects performance
 A <b>Yes</b> it might temporary pause the execution when run. to avoid it take following steps
 <ul>
@@ -116,6 +119,7 @@ A <b>Yes</b> it might temporary pause the execution when run. to avoid it take f
     Making smaller objects becoz larger one are treated differently
   </li>
 </ul>
+
 
 
 
