@@ -120,6 +120,8 @@ A <b>Yes</b> it might temporary pause the execution when run. to avoid it take f
   </li>
 </ul>
 
+<b>Note:</b> In ASP.NET middleware are registered using the program.cs file
+
 
 
 
