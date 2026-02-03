@@ -122,6 +122,81 @@ A <b>Yes</b> it might temporary pause the execution when run. to avoid it take f
 
 <b>Note:</b> In ASP.NET middleware are registered using the program.cs file
 
+Q What is DI
+A In real time scenarios a class may require an object of other class for example there is class named orderservice which has an attribute of class paymenttype so making instance of paymenttype when creating object for orderservice make it tightly copuled.<br>
+Thats when Dependency injection comes into picture
+
+public class OrderService
+{
+    private PaymentService _paymentService = new PaymentService(); // Hardcoded dependency
+
+    public void ProcessOrder()
+    {
+        _paymentService.ProcessPayment();
+    }
+}
+
+
+public class OrderService
+{
+    private readonly IPaymentService _paymentService;
+
+    public OrderService(IPaymentService paymentService) // Injecting dependency
+    {
+        _paymentService = paymentService;
+    }
+
+    public void ProcessOrder()
+    {
+        _paymentService.ProcessPayment();
+    }
+}
+
+<b>NOTE</b>here dependency can be set by the help of constructor AND  classes depends on interface rather than full implementation of a class.
+
+<b>Note</b> ASP.NET automatically implements the dependency injection by the help of Program.cs file
+
+
+Example
+Step 1️⃣ Create an interface
+public interface IPaymentService
+{
+    void Pay();
+}
+Step 2️⃣ Implement the interface
+public class CreditCardPaymentService : IPaymentService
+{
+    public void Pay()
+    {
+        Console.WriteLine("Payment done using Credit Card");
+    }
+}
+
+public class UpiPaymentService : IPaymentService
+{
+    public void Pay()
+    {
+        Console.WriteLine("Payment done using UPI");
+    }
+}
+Step 3️⃣ Use interface in the dependent class
+public class OrderService
+{
+    private readonly IPaymentService _paymentService;
+
+    public OrderService(IPaymentService paymentService)
+    {
+        _paymentService = paymentService;
+    }
+
+    public void PlaceOrder()
+    {
+        _paymentService.Pay();
+    }
+}
+Step 4️⃣ Register dependency (ASP.NET Core)
+builder.Services.AddScoped<IPaymentService, CreditCardPaymentService>();
+
 
 
 
