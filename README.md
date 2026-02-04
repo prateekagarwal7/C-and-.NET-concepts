@@ -197,6 +197,11 @@ public class OrderService
 Step 4️⃣ Register dependency (ASP.NET Core)
 builder.Services.AddScoped<IPaymentService, CreditCardPaymentService>();
 
+Q What is serialization
+A It is process of converting object into the stream of byte. We can recreate the ibject from it whenever needed that process is called deserialization. I have used the xml serialization i.e is storing data in the xml format.
+
+Q 
+
 
 
 
