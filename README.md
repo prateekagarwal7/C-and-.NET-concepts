@@ -162,7 +162,7 @@ Step 1️⃣ Create an interface
 public interface IPaymentService
 {
     void Pay();
-}
+}<br>
 Step 2️⃣ Implement the interface
 public class CreditCardPaymentService : IPaymentService
 {
@@ -178,7 +178,7 @@ public class UpiPaymentService : IPaymentService
     {
         Console.WriteLine("Payment done using UPI");
     }
-}
+}<br>
 Step 3️⃣ Use interface in the dependent class
 public class OrderService
 {
@@ -193,14 +193,41 @@ public class OrderService
     {
         _paymentService.Pay();
     }
-}
+}<br>
 Step 4️⃣ Register dependency (ASP.NET Core)
 builder.Services.AddScoped<IPaymentService, CreditCardPaymentService>();
 
 Q What is serialization
 A It is process of converting object into the stream of byte. We can recreate the ibject from it whenever needed that process is called deserialization. I have used the xml serialization i.e is storing data in the xml format.
 
-Q 
+Q What is upcasting
+A converting the child class object into the parent class reference. Meaning in memory it will be stored as child class only but can be referred as parent. But miraculously runtime polymorphismm can be implemented<br>
+class Animal{
+public void eat(){Console.WriteLine("fhgcgh")}
+
+public virtual void sound(){Console.WriteLine("this is any sound")}; 
+}
+
+class dog : Animal{
+public overridevoid sound(){Console.WriteLine("bark")}
+}
+
+Animal ani  = new dog();
+ani.eat();
+ani.sound();// output bark
+
+<u>Benefits of Upcasting</u>
+<ul>
+  <li>
+    Loose Coupling
+  </li>
+  <li>
+    helps to implement the DI
+  </li>
+</ul>
+
+
+
 
 
 
