@@ -238,7 +238,7 @@ file 2 <br>
 namespace being.animal{
 public partial class dog{ public string breed;}
 }<br>
-}
+
 
 
 
