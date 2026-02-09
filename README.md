@@ -226,6 +226,20 @@ ani.sound();// output bark
   </li>
 </ul>
 
+Q What is partial class<br>
+A Partial class can be split amoung multiple file under a single namespace. At compile time it is compiled into the single class
+
+Example <br>
+file 1<br>
+namespace being.animal{
+public partial class dog{ public string sound;}
+}<br>
+file 2 <br>
+namespace being.animal{
+public partial class dog{ public string breed;}
+}<br>
+}
+
 
 
 
