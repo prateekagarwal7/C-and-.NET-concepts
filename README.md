@@ -239,6 +239,20 @@ namespace being.animal{
 public partial class dog{ public string breed;}
 }<br>
 
+Q What are different ways of performing the method overloading?<br>
+A The different ways of doing method overloading are -
+<ul>
+  <li>
+    Changing the order of parameters
+  </li>
+  <li>
+    changing the number of parameters
+  </li>
+  <li>
+    changing data type as well
+  </li>
+</ul>
+
 
 
 
