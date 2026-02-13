@@ -253,7 +253,17 @@ A The different ways of doing method overloading are -
   </li>
 </ul>
 
-
+Q What is constructor chaining<br>
+A When an constructor calls another constructor or constructor of its base class to implement the exsisting logic<br>
+Example: public class animal(){
+public string name<br>
+<br> animal()
+{ Console.WriteLine("This is animal")
+}
+animal(string name):this(){ this.name  = name; Console.WriteLine(this.name)}
+}
+<br>
+Output: this is animal Dog (if we pass dog as name) 
 
 
 
