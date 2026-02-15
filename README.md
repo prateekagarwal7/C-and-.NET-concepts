@@ -264,6 +264,15 @@ animal(string name):this(){ this.name  = name; Console.WriteLine(this.name)}
 }
 <br>
 Output: this is animal Dog (if we pass dog as name) 
+<br>
+Q What is boxing ?<br>
+A Boxing is the process of converting the value type into referencce type<br>
+int x = 10;        // value type (stored in Stack)<br> // it is in stack
+object obj = x; // it is in heap
+<p>
+object obj = 10;   // Boxing<br>
+int x = (int)obj;  // Unboxing
+</p>
 
 
 
